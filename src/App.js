@@ -45,6 +45,18 @@ function App() {
         <Routes>
           <Route
             path="/"
+            exact
+            element={
+              <TextForm
+                showAlert={showAlert}
+                heading="TextUtils - Word Counter, Character Counter, Remove Extra Space "
+                mode={mode}
+              />
+            }
+          />
+          <Route
+            path="/home"
+            exact
             element={
               <TextForm
                 showAlert={showAlert}
